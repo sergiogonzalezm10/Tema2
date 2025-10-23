@@ -6,25 +6,114 @@ public class Ejercicio3 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-
-       
-       final char[] LETRASDNI = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 
-                            'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 
-                            'C', 'K', 'E'};
-
-        System.out.println("Introduce el número de DNI (8 dígitos): ");
-        int numeroDNI = scanner.nextInt();
-
-       
-        if (numeroDNI < 10000000 || numeroDNI > 99999999) {
-            System.out.println("El número del DNI debe tener 8 dígitos.");
+		
+		// Inicio escáner
+        Scanner sc = new Scanner(System.in);
+        
+        // Variable para almacenar el número del dni
+        int numero;
+        
+        // Variable para almacenar la letra del dni
+        String letra = null;
+        
+        // Variable para almacenar la longitud del número
+        int longitud;
+        
+        // Variable para almacenar el módulo del DNI
+        int moduloDni;
+        
+        // Imprimimos que pida al usuario que introduzca los números de su DNI
+        System.out.println("Introduce una combinación de 8 digitos del DNI ");
+        numero = sc.nextInt();
+        
+        // Vemos la longitud del número
+        longitud = String.valueOf(numero).length();
+        
+        if ( longitud != 8) {
+            
+            System.out.println("El número debe de ser de 8 cifras");
+            
         } else {
-            int resto = numeroDNI % 23;
-            char letra = LETRASDNI[resto];
-            System.out.println("La letra del DNI es: " + letra);
-            System.out.println("DNI completo: " + numeroDNI + letra);
+            
+            moduloDni = numero %23;
+            
+            letra = switch (numero % 23) {
+            case 0 ->{ 
+                yield "T";
+            }
+            case 1 ->{ 
+                yield "R";
+            }
+            case 2 ->{ 
+                yield "W";
+            }
+            case 3 ->{ 
+                yield "A";
+            }
+            case 4 ->{ 
+                yield "G";
+            }
+            case 5 ->{ 
+                yield "M";
+            }
+            case 6 ->{ 
+                yield "Y";
+            }
+            case 7 ->{ 
+                yield "F";
+            }
+            case 8 ->{ 
+                yield "P";
+            }
+            case 9 ->{ 
+                yield "D";
+            }
+            case 10 ->{ 
+                yield "X";
+            }
+            case 11->{ 
+                yield "B";
+            }
+            case 12 ->{ 
+                yield "N";
+            }
+            case 13 ->{ 
+                yield "J";
+            }
+            case 14 ->{ 
+                yield "Z";
+            }
+            case 15 ->{ 
+                yield "S";
+            }
+            case 16 ->{ 
+                yield "Q";
+            }
+            case 17 ->{ 
+                yield "V";
+            }
+            case 18 ->{ 
+                yield "H";
+            }
+            case 19 ->{ 
+                yield "L";
+            }
+            case 20 ->{ 
+                yield "C";
+            }
+            case 21 ->{ 
+                yield "K";
+            }
+            default ->{
+                yield "E";
+            }
+            };    
         }
+        
+        // Imprimimos el DNI con la letra correspondiente
+        System.out.println(numero + letra);
 
-        scanner.close();
-    }
+        // Cierre escáner
+        sc.close();
+	}
 }
