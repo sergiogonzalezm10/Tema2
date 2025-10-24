@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class Ejercicio3 {
 
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
+	public static void main(String[] args) {	
 		
 		// Inicio escáner
         Scanner sc = new Scanner(System.in);
@@ -29,14 +28,16 @@ public class Ejercicio3 {
         // Vemos la longitud del número
         longitud = String.valueOf(numero).length();
         
+        //Condicional if para comprobar si la longitud del número es distinto a 8 e imprimir que tiene que tener 8 cifras si no.
         if ( longitud != 8) {
-            
-            System.out.println("El número debe de ser de 8 cifras");
-            
+           System.out.println("El número debe de ser de 8 cifras");
+         
+        //Condicional else para sino se cumple lo anterior calcular la letra del DNI
         } else {
             
             moduloDni = numero %23;
             
+            //Switch para dependiendo del valor del número del DNI por el módulo de 23, darnos la letra correspondiente del número
             letra = switch (numero % 23) {
             case 0 ->{ 
                 yield "T";

@@ -5,23 +5,31 @@ import java.util.Scanner;
 public class Ejercicio6 {
 
 	public static void main(String[] args) {
+		//Variable para almecenar el número del mes
 		int mes;
+		//Variable para almacenar el año
 		int año;
+		//Boolean para comprobar si el año es bisiesto o no
 		boolean bisiesto;
 		
+		//Inicio escáner
 		Scanner sc = new Scanner(System.in);
 		
+		//Imprimimos que introduzcamos el número del mes
 		System.out.println("Introduce el número del mes: ");
 		mes = sc.nextInt();
 		
+		//Imprimimos que introduzcamos el año
 		System.out.println("Introduce el año: ");
 		año = sc.nextInt();
 		
+		//Comprobar si el año es bisiesto o no, y devolvernos true o false
 		bisiesto = (año % 4 == 0 && año % 100 != 0) || (año % 400 == 0);
 		
+		//Condicional if para si bisiesto es true , el año es bisiesto
 		if (bisiesto == true) {
 			System.out.println("Tu año es bisiesto");
-			
+			//Switch para dependiento del número del mes introducio imprimirnos cuantos dias tiene ese mes
 			switch (mes) {
 			case 1 -> {
 				System.out.println("Enero: 31 días");
@@ -51,8 +59,9 @@ public class Ejercicio6 {
 				System.out.println("¡El año tiene 12 meses!");
 						 }
 			}
-			
-		} else {
+		
+		//Condicional else para si el año no es bisiesto hacer lo siguiente
+		} else { 
 			System.out.println("Tu año no es bisiesto");
 			
 			switch (mes) {	
@@ -85,6 +94,8 @@ public class Ejercicio6 {
 						 }
 			}
 	}
+		//Cierre escáner
+		sc.close();
 	}
 }
 

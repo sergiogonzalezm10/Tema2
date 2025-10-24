@@ -27,7 +27,7 @@ public class Ejercicio1 {
 		//Condicional else if para saber si el número es capicúa
 				} else if (numero < 10) {
 					System.out.println("El número " + numero + " es capicúa.");
-
+			
 				} else if (numero < 100) {
 					digito1 = numero / 10;
 					digito2 = numero % 10;
