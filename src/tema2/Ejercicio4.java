@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ejercicio4 {
 
 	public static void main(String[] args) {
-		//Variable para almacenar número
+		//Variable para almacenar el número
 		double num;
 		
 		//Inicio escáner
@@ -18,7 +18,7 @@ public class Ejercicio4 {
 		//Condicional if para comparar el número
 		if (num < 0 || num > 99999) {
 			System.out.println("Tiene que ser un número comprendido entre 0 y 99999: ");
-		//Condicional if para comparar el número si cumple lo anterior
+		//Condicional if para comparar el número si cumple lo anterior o no y hacer lo siguiente
 		} else if ( num < 10) {
 			System.out.println("El número tiene 1 cifra");
 		} else if ( num < 100) {
