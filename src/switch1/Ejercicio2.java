@@ -38,8 +38,11 @@ public class Ejercicio2 {
 		}
 		case 7 -> {
 			System.out.println("Domingo");
-		}
+		} 
 		
+		default ->
+			System.out.println("¡La semana solo tiene 7 días!");
+		 
 		}
 		
 		//Cierre escáner

@@ -17,13 +17,13 @@ public class Ejercicio6 {
 		Scanner sc = new Scanner(System.in);
 		
 		//Imprimimos que introduzcamos el primer número
-		System.out.println("Introduce el número 1: ");
+		System.out.println("Introduce el primer número: ");
 		num1 = sc.nextInt();
 		//Imprimimos que introduzcamos el segundo número
-		System.out.println("Introduce el número 2: ");
+		System.out.println("Introduce el segundo número: ");
 		num2 = sc.nextInt();
 		//Imprimimos que introduzcamos el tercer número
-		System.out.println("Introduce el número 3: ");
+		System.out.println("Introduce el tercer número: ");
 		num3 = sc.nextInt();
 		
 		//Condicional para comprobar si la suma de los dos primeros números es igual al tercer número

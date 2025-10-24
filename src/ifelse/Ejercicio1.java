@@ -13,7 +13,7 @@ public class Ejercicio1 {
 		Scanner sc = new Scanner(System.in);
 		
 		//Imprimimos que introduzcamos un número
-		System.out.println("Introduce un número");
+		System.out.println("Introduce un número:");
 		num = sc.nextInt();
 		
 		//Condicional if para comprobar si el número es par o impar y imprimir par o impar dependiendo.
