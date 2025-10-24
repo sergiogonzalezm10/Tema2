@@ -1,4 +1,4 @@
-package tema2;
+package ifelse;
 
 import java.util.Scanner;
 
