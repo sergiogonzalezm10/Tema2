@@ -45,7 +45,7 @@ public class Ejercicio5 {
 		        //Condicional if, si la cantidad de alumnos es mayor a 0, imprimimos resultados
 		        if (contadorAlumnos > 0) {
 		            media = sumaEdades / contadorAlumnos;
-
+		        
 		            System.out.println("Suma total de edades: " + sumaEdades);
 		            System.out.println("Número de alumnos: " + contadorAlumnos);
 		            System.out.println("Media de edades: " + media);
