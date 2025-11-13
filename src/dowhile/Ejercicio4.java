@@ -9,6 +9,8 @@ public class Ejercicio4 {
 		int numMult;
 		
 		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Introduce un número: ");
 		numMult = sc.nextInt();
 		
 		do {
