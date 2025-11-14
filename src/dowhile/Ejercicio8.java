@@ -18,8 +18,7 @@ public class Ejercicio8 {
         //Variable para almacenar el segundo valor del dado
         int num2;
         
-        // --- BUCLE PARA LA PRIMERA TIRADA ---
-        // Se repetirá mientras que num1 sea 0 (nuestro valor de error)
+      
         do {
             System.out.println("Introduce el valor del dado en la primera tirada (UNO, DOS, etc): ");
             tirada1 = sc.next();
@@ -39,13 +38,10 @@ public class Ejercicio8 {
                     yield 0; 
                 }
             };
-        
-        } while (num1 == 0); // Mientras num1 sea 0, significa que la tirada fue inválida
+        // Mientras num1 sea 0, significa que la tirada fue inválida
+        } while (num1 == 0); 
 
-        
-        // --- BUCLE PARA LA SEGUNDA TIRADA ---
-        // Solo llegamos aquí si num1 es válido.
-        // Se repetirá mientras que num2 sea 0 (nuestro valor de error)
+        // Se repetirá mientras que num2 sea 0 (el valor de error)
         do {
             System.out.println("Introduce el valor del dado en la segunda tirada (UNO, DOS, etc): ");
             tirada2 = sc.next();
@@ -64,8 +60,8 @@ public class Ejercicio8 {
                     yield 0;
                 }
             };
-
-        } while (num2 == 0); // Mientras num2 sea 0, la tirada fue inválida
+        // Mientras num2 sea 0, la tirada fue inválida
+        } while (num2 == 0); 
 
 
         //Si el programa llega aquí, es porque num1 y num2 son válidos (1-6)
