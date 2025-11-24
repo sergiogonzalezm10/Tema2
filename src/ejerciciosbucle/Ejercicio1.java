@@ -7,19 +7,19 @@ public class Ejercicio1 {
 	public static void main(String[] args) {
 	    //Variables para almacenar la hora, minutos, segundos e incremento de segundos que el usuario desea.		
 		int hora, minutos, segundos, incremento;
-		        Scanner scanner = new Scanner(System.in);
+		        Scanner sc = new Scanner(System.in);
 
 		        System.out.print("Introduce la Hora (0-23): ");
-		        hora = scanner.nextInt();
+		        hora = sc.nextInt();
 
 		        System.out.print("Introduce los Minutos (0-59): ");
-		        minutos = scanner.nextInt();
+		        minutos = sc.nextInt();
 
 		        System.out.print("Introduce los Segundos (0-59): ");
-		        segundos = scanner.nextInt();
+		        segundos = sc.nextInt();
 
 		        System.out.print("Introduce los segundos a incrementar: ");
-		        incremento = scanner.nextInt();
+		        incremento = sc.nextInt();
 		        
 		        // El bucle se ejecuta tantas veces como segundos queramos sumar
 		        for (int i = 0; i < incremento; i++) {
@@ -47,6 +47,6 @@ public class Ejercicio1 {
 		        System.out.printf("Nueva hora: %02d:%02d:%02d%n", hora, minutos, segundos);
 		        
 		        //Cierre escáner
-		        scanner.close();
+		        sc.close();
 		    }
 		}
