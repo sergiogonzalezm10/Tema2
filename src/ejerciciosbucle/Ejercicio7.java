@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class Ejercicio7 {
 
 	public static void main(String[] args) {
-	      	
+		
 		int n;
-	        Scanner sc = new Scanner(System.in);
+		
+	      	Scanner sc = new Scanner(System.in);
 	        
 	        System.out.print("Introduce el número de filas de la pirámide: ");
 	        n = sc.nextInt();
