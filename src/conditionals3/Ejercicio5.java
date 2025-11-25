@@ -5,8 +5,7 @@ import java.util.Scanner;
 public class Ejercicio5 {
 
 	public static void main(String[] args) {
-	
-		double precio;
+		
 		double distancia;
 		double dias;
 		double precioTotal;
